@@ -1,0 +1,91 @@
+// Import required components
+
+$bg-color: #f5f5f5;
+$primary-color: #191b1c;
+$secondary-color: #b3e0dc;
+$accent-color: #008880;
+
+// Define grid variables
+$total-columns: 12;
+$column-width: 60px;
+$gutter-width: 20px;
+$grid-padding: $gutter-width;
+
+// Set global styles
+body {
+  background-color: $bg-color;
+}
+
+// Define typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+// Horizontal navbar styles
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: $bg-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+  // Logo styles
+  .navbar-logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: left;
+  }
+  
+  // Menu styles
+  .navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    // Menu items styles
+    .navbar-item {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      color: $primary-color;
+      margin-right: 20px;
+    }
+    
+    // User login styles
+    .navbar-user {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      color: $primary-color;
+      border: 2px solid $secondary-color;
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+
+// Tablet adaptive styles
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+  
+  .navbar-menu {
+    margin-top: 10px;
+    justify-content: center;
+    flex-grow: 1;
+  }
+}

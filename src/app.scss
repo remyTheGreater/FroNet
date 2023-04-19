@@ -1,0 +1,35 @@
+$bg-color: #f71010;
+$primary-color: #191b1c;
+$secondary-color: #b3e0dc;
+$accent-color: #008880;
+$grid-columns: 12;
+$grid-gutter: 1rem;
+$breakpoint-tablet: 768px;
+
+:root {
+--bg-color: #{$bg-color};
+--primary-color: #{$primary-color};
+--secondary-color: #{$secondary-color};
+--accent-color: #{$accent-color};
+--grid-columns: #{$grid-columns};
+--grid-gutter: #{$grid-gutter};
+--breakpoint-tablet: #{$breakpoint-tablet};
+}
+
+.navbar {
+background-color: var(--primary-color);
+color: var(--secondary-color);
+}
+
+div {
+background-color: #{$bg-color};
+}
+
+.body, h1, h2, h3, h4, h5, h6,
+p, span, label, button {
+font-family: "Poppins", sans-serif;
+}
+
+.body, p, span, label, button {
+font-family: "Montserrat", sans-serif;
+}

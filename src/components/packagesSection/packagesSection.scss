@@ -1,0 +1,29 @@
+.section-packages {
+  text-align: center;
+  padding: 32px;
+  background-color: #B3E0DC66;
+
+  .packages-heading {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  .choose-package-heading {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .package-container {
+    display: flex;
+    justify-content: space-between;
+
+    .StateComponent {
+      width: calc(33.33% - 16px);
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

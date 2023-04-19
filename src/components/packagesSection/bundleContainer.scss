@@ -1,0 +1,154 @@
+.section-component {
+    width: 360px;
+    height: 416px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 16px;
+  
+    &.mobile-adaptable {
+      width: 100%;
+    }
+  
+    .header {
+      text-align: left;
+      font-weight: bold;
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+  
+    .package-name {
+      text-align: left;
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 16px;
+    }
+  
+    .user-profiles {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      margin-bottom: 8px;
+  
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin-right: -12px;
+        z-index: 1;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+  
+      &:after {
+        content: "+256 subscribers are active right now";
+        font-size: 14px;
+        color: #999;
+        margin-left: 12px;
+        line-height: 40px;
+        z-index: 0;
+      }
+    }
+  
+    hr {
+      border: none;
+      border-top: 1px solid #b3b2b2;
+      margin: 16px 0;
+    }
+  
+    .checkmark-list {
+      margin-bottom: 16px;
+  
+      li {
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: #333;
+        list-style: none;
+  
+        &:before {
+          content: "✔";
+          margin-right: 8px;
+          color: #6cb644;
+          font-size: 16px;
+        }
+      }
+    }
+  
+    .subscribe-button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+  
+      &:hover {
+        background-color: #444;
+      }
+    }
+  
+    &:hover {
+      width: 366px;
+      height: 545px;
+  
+      .view-all-link {
+        display: block;
+        text-align: center;
+        margin-top: 24px;
+        font-size: 16px;
+        color: #333;
+      }
+    }
+  
+    .view-all-link {
+      display: none;
+    }
+  }
+  .section-component {
+    .expanded-section {
+      .header {
+        font-size: 32px;
+      }
+
+      .package-name {
+        font-size: 28px;
+      }
+
+      .user-profiles {
+        img {
+          width: 60px;
+          height: 60px;
+          border: 4px solid #fff;
+        }
+
+        &:after {
+          font-size: 20px;
+          margin-left: 24px;
+        }
+      }
+
+      .checkmark-list {
+        li {
+          font-size: 20px;
+        }
+      }
+
+      .subscribe-button {
+        font-size: 20px;
+        padding: 16px 32px;
+      }
+
+      &:hover {
+        width: 466px;
+        height: 645px;
+      }
+    }
+  }
+
+  
